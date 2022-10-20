@@ -21,7 +21,7 @@ const Reviews = () => {
             location:'California',
         },
         {
-            _id:1,
+            _id:3,
             description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde? Hic magni numquam nesciunt aliquam? Laudantium magni quibusdam quas exercitationem.',
             img:people3,
             title:'Winson Herry',
