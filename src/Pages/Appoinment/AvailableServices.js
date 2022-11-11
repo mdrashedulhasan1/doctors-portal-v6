@@ -5,11 +5,12 @@ import ServiceModal from './ServiceModal';
 const AvailableServices = ({ date }) => {
     const [services, setServices] = useState([]);
     const [treatment, setTreatment] = useState(null);
+    const formattedDate = format(date, 'PP');
     useEffect(()=>{
-        fetch('http://localhost:5000/service')
+        fetch(`http://localhost:5000/service`)
         .then(res => res.json())
         .then(data => setServices(data))
-    })
+    },[])
     return (
         <div className='mt-12'>
             <div className='text-center'>
